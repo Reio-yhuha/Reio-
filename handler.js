@@ -825,7 +825,6 @@ global.dfail = (type, m, conn) => {
         admin: '👤',
         botAdmin: '🤖',
         unreg: '🔒',
-        nsfw: '🔞',
         rpg: '🎮',
         restrict: '⛔',
     }
@@ -846,10 +845,6 @@ global.dfail = (type, m, conn) => {
         botAdmin: `*${emoji.botAdmin} Bot Admin's Query*\n
     ${userTag} Make the bot an *Admin* to use this command!`,
         unreg: `*${emoji.unreg} Registration Query*\n
-    ${userTag} Please register to use this feature by typing:\n\n*#register name.age*\n\nExample: *#register ${m.name}.18*!`,
-        nsfw: `*${emoji.nsfw} NSFW Query*\n
-    ${userTag} NSFW is not active. Please contact the Group admin to enable this feature!`,
-        restrict: `*${emoji.restrict} Inactive Feature Query*\n
     ${userTag} This feature is *disabled*!`,
     }
      [type]
